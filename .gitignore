@@ -1,0 +1,72 @@
+# --------------------------
+# Maven / Gradle
+# --------------------------
+target/
+build/
+*.iml
+*.class
+*.jar
+*.war
+*.ear
+
+# --------------------------
+# Logs
+# --------------------------
+*.log
+logs/
+spring.log
+
+# --------------------------
+# Temporary / OS files
+# --------------------------
+*.tmp
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# IDEs
+# --------------------------
+.idea/
+*.ipr
+*.iws
+.vscode/
+*.project
+*.classpath
+*.settings/
+
+# --------------------------
+# Node / frontend (if used)
+# --------------------------
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# --------------------------
+# Environment / secrets
+# --------------------------
+.env
+.env.local
+.env.*.local
+
+# --------------------------
+# Docker
+# --------------------------
+.dockerignore
+docker-compose.override.yml
+*.tar.gz
+
+# --------------------------
+# GitHub Actions / CI artifacts
+# --------------------------
+*.out
+*.log
+target/*.jar
+target/*.war
+target/*.ear
+target/test-classes/
+target/classes/
+**/target/
