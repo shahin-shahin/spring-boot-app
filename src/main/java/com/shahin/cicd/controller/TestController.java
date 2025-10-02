@@ -14,7 +14,7 @@ public class TestController {
         return "testing message";
     }
 
-    @GetMapping("/value/{value]")
+    @GetMapping("/value/{value}")
     public String getValue(@PathVariable String value){
         return "Enter the value is : "+value;
     }
