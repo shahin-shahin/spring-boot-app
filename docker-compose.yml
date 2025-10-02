@@ -1,9 +1,10 @@
 services:
   spring-boot-app:
-    # The image will be dynamically set by the GitHub Actions workflow
-    # to your dockerhub_username/your_repo_name:latest
-    image: spring-boot-app:latest # Placeholder, will be replaced by actual image in CI/CD
+    # This line is now corrected to use the environment variable
+    # provided by the GitHub Actions workflow.
+    image: ${DOCKER_IMAGE}
     container_name: spring-boot-app-container
     ports:
       - "8080:8080"
     restart: always
+
